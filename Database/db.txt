@@ -1,0 +1,94 @@
+/*
+SQLyog - Free MySQL GUI v5.14
+Host - 5.0.77-community-nt : Database - timetable1
+*********************************************************************
+Server version : 5.0.77-community-nt
+*/
+
+SET NAMES utf8;
+
+SET SQL_MODE='';
+
+create database if not exists `timetable1`;
+
+USE `timetable1`;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO';
+
+/*Table structure for table `teachers` */
+
+DROP TABLE IF EXISTS `teachers`;
+
+CREATE TABLE `teachers` (
+  `id` int(11) NOT NULL auto_increment,
+  `tname` char(100) default NULL,
+  `sname` char(100) default NULL,
+  `sem` char(50) default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Data for the table `teachers` */
+
+/*Table structure for table `time_table_student` */
+
+DROP TABLE IF EXISTS `time_table_student`;
+
+CREATE TABLE `time_table_student` (
+  `id` int(4) NOT NULL auto_increment,
+  `day1` char(50) default NULL,
+  `p1` char(100) default NULL,
+  `p2` char(100) default NULL,
+  `p3` char(100) default NULL,
+  `p4` char(100) default NULL,
+  `p5` char(100) default NULL,
+  `lab1` char(100) default NULL,
+  `lab2` char(100) default NULL,
+  `sem` char(100) default NULL,
+  `session` char(100) default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Data for the table `time_table_student` */
+
+/*Table structure for table `time_table_teacher` */
+
+DROP TABLE IF EXISTS `time_table_teacher`;
+
+CREATE TABLE `time_table_teacher` (
+  `id` int(4) NOT NULL auto_increment,
+  `day1` char(50) default NULL,
+  `p1` char(100) default NULL,
+  `p2` char(100) default NULL,
+  `p3` char(100) default NULL,
+  `p4` char(100) default NULL,
+  `p5` char(100) default NULL,
+  `lab1` char(100) default NULL,
+  `lab2` char(100) default NULL,
+  `sem` char(100) default NULL,
+  `session` char(100) default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Data for the table `time_table_teacher` */
+
+/*Table structure for table `users` */
+
+DROP TABLE IF EXISTS `users`;
+
+CREATE TABLE `users` (
+  `id` int(4) NOT NULL auto_increment,
+  `uname` char(50) default NULL,
+  `passw` char(50) default NULL,
+  `addr` char(100) default NULL,
+  `email` char(50) default NULL,
+  `mobile` char(50) default NULL,
+  `sem` char(50) default NULL,
+  `session` char(50) default NULL,
+  `utype` char(50) default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+/*Data for the table `users` */
+
+insert into `users` (`id`,`uname`,`passw`,`addr`,`email`,`mobile`,`sem`,`session`,`utype`) values (1,'admin','admin','mandi','admin@mail.com','9887876567','0','0','admin');
+
+SET SQL_MODE=@OLD_SQL_MODE;
