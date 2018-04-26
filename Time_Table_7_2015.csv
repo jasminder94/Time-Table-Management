@@ -1,0 +1,9 @@
+Guru Tegh Bahadur Institute of Technology
+Time Table
+7,2015
+Days/Time,8:00-9:00,9:00-10:00,10:00-11:00,11:00-12:00,12:00-12:30,12:30-1:30,BatchA-1:30-3:30,BatchB-1:30-3:30
+MON,s_aa,a_bb,s_aa,a_bb,RECESS,c_vv,s_aa,a_bb
+TUE,v_cc,v_cc,c_vv,a_bb,RECESS,a_bb,a_bb,s_aa
+WED,s_aa,v_cc,v_cc,s_aa,RECESS,v_cc,NA_NA,NA_NA
+THU,c_vv,a_bb,a_bb,s_aa,RECESS,c_vv,NA_NA,NA_NA
+FRI,v_cc,v_cc,a_bb,a_bb,RECESS,c_vv,NA_NA,NA_NA
